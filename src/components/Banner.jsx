@@ -43,8 +43,8 @@ const Banner = () => {
     };
 
     return (
-        <div className="lg:container bg-amber-50 w-full">
-            <div className="slider-container slider_container w-full h-full">
+         <div className="lg:container">
+            <div className="slider-container w-full h-full">
                 <Slider {...settings}>
                     {
                         products?.map((product) => (
@@ -53,7 +53,7 @@ const Banner = () => {
                                 {/* banner text  */}
                                 <div className="banner_text">
                                     <p className="text-sm font-inter text-[#272343] uppercase font-normal">{product?.subTitle}</p>
-                                    <h3 className="text-6xl text-[#272343] font-inter capitalize leading-16 max-w-[631px] w-full font-bold mb-5">{product?.title}</h3>
+                                    <h3 className="text-6xl text-[#272343] font-inter capitalize leading-16 max-w-[601px] w-full font-bold mb-5">{product?.title}</h3>
                                     <button className="max-w-[171px] w-full flex items-center justify-center gap-2 h-[52px] bg-[#029fae] rounded-lg capitalize text-white cursor-pointer">shop now <MoveRight /></button>
                                 </div>
 
@@ -71,5 +71,6 @@ const Banner = () => {
         </div>
     );
 };
+
 
 export default Banner;

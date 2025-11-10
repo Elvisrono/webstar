@@ -1,11 +1,14 @@
+/* tailwind css  */
 @import "tailwindcss";
 @plugin "daisyui";
 
+/* google font inter  */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @theme {
     --font-inter: "Inter", sans-serif;
 }
+
 .banner_slide_item {
     display: flex !important;
     justify-content: space-between;
@@ -39,11 +42,11 @@
 }
 
 .slick-prev {
-    left: -95px !important;
+    color: #007580;
 }
 
 .slick-next {
-    right: -95px !important;
+    color: #007580 !important;
 }
 
 .slider_container>.slick-slider>.slick-prev:before,
