@@ -43,8 +43,8 @@ const Banner = () => {
     };
 
     return (
-         <div className="lg:container">
-            <div className="slider-container w-full h-full">
+         <div className="lg:container h-full">
+            <div className="slider-container">
                 <Slider {...settings}>
                     {
                         products?.map((product) => (
