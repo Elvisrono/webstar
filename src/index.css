@@ -34,6 +34,22 @@ body{
     z-index: 2;
 }
 
+body {
+    background-color: #f0f2f3;
+    overflow-x: hidden; /* Prevents horizontal scrollbar */
+    
+}
+
+.lg:container {
+    overflow-x: hidden; /* Also hide on container */
+}
+
+/* Fix the banner image container */
+.banner_image {
+    position: relative;
+    z-index: 2;
+    overflow: hidden; /* Prevents the circular bg from extending out */
+}
 .banner_image::before {
     content: "";
     position: absolute;

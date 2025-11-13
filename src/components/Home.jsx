@@ -2,6 +2,7 @@ import React from 'react'
 import Banner from './Banner'
 import Delivery from './Delivery'
 import Brand from './Brand'
+import Features from './Features'
 
 const Home = () => {
   return (
@@ -14,6 +15,10 @@ const Home = () => {
         </div>
         <div className='brand flex items-center justify-center w-full mt-10'>
           <Brand />
+        </div>
+        <div className='features w-full min-h-[150px] mt-10'>
+          <h2 className='text-2xl font-bold text-center mb-4 text-black'>Features</h2>
+          <Features />
         </div>
     </div>
   )
