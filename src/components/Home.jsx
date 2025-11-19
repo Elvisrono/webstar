@@ -3,6 +3,7 @@ import Banner from './Banner'
 import Delivery from './Delivery'
 import Brand from './Brand'
 import Features from './Features'
+import Categories from './Categories'
 
 const Home = () => {
   return (
@@ -19,6 +20,9 @@ const Home = () => {
         <div className='features w-full min-h-[150px] mt-10'>
           <h2 className='text-2xl font-bold text-center mb-4 text-black'>Features</h2>
           <Features />
+        </div>
+        <div className='w-full items-center justify-center mb-[80px]'>
+          <Categories/>
         </div>
     </div>
   )
