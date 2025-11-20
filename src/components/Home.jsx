@@ -4,6 +4,7 @@ import Delivery from './Delivery'
 import Brand from './Brand'
 import Features from './Features'
 import Categories from './Categories'
+import Products from './Products'
 
 const Home = () => {
   return (
@@ -23,6 +24,9 @@ const Home = () => {
         </div>
         <div className='w-full items-center justify-center mb-[80px]'>
           <Categories/>
+        </div>
+        <div className='w-full flex items-center justify-center'>
+          <Products/>
         </div>
     </div>
   )
