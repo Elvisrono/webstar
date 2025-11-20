@@ -6,6 +6,7 @@ import Features from './Features'
 import Categories from './Categories'
 import Products from './Products'
 import Client from './Client'
+import Recent from './Recent'
 
 const Home = () => {
   return (
@@ -29,8 +30,11 @@ const Home = () => {
         <div className='w-full flex items-center justify-center'>
           <Products/>
         </div>
-        <div className='w-full items-center justify-center bg-gray-200 min-h-[580px] pb-[80px]'>
+        <div className='w-full items-center justify-center bg-gray-200 min-h-[580px] pt-[80px] pb-[80px'>
           <Client/>
+        </div>
+        <div className='w-full flex items-center justify-center pb-[80px] pt-[80px]'>
+          <Recent/>
         </div>
     </div>
   )
