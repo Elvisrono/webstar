@@ -29,7 +29,7 @@ const Home = () => {
         <div className='w-full flex items-center justify-center'>
           <Products/>
         </div>
-        <div className='w-full items-center justify-center bg-[#f0f2f3] min-h-[580px]'>
+        <div className='w-full items-center justify-center bg-gray-200 min-h-[580px] pb-[80px]'>
           <Client/>
         </div>
     </div>
