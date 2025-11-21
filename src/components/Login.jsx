@@ -1,0 +1,27 @@
+import {MoveRight } from 'lucide-react'
+import React from 'react'
+import { useNavigate, Link } from 'react-router-dom'
+
+const Login = () => {
+
+    const navigate = useNavigate();
+    const submitHandle = () => {
+        navigate('/')
+    }
+  return (
+    <div className='lg:container mx:auto p-[80px]'>
+        <div className='max-w-[648px] w-full min-h-[382px] p-[31px] mx:auto flex items-center justify-center flex-col rounded-lg border-[1px] border-[#9a9caa]'>
+            <h3 className='text-3xl text-[#272343] font-semibold font-inter mb-5 capitalize'> Login</h3>
+            <form action="#" onSubmit={submitHandle} className='flex flex-col items-center w-full space-y-4'>
+                <input type="email" placeholder='Your email...' className='w-ful h-[50px] bg-[#a7beca] rounded-lg pl-3.5' />
+                <input type="password" placeholder='Your password' className='w-ful h-[50px] bg-[#86a1af] rounded-lg pl-3.5' />
+                <button type='submit' className='w-full h-[50px] bg-[#007580] rounded-lg pl-3.5 text-base text-white font-semibold font-inter capitalize flex items-center justify-center cursor-pointer gap-2.5'>Login <MoveRight/></button>
+            </form>
+             <p className="text-base text-[#272343] font-normal font-inter flex items-center justify-center gap-2.5 mt-4">Don't have account <Link to={'/auth/register'} className='text-[#007580]'>Register</Link></p>
+        </div>
+      
+    </div>
+  )
+}
+
+export default Login

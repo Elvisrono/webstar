@@ -5,6 +5,7 @@ import AuthCheck from './AuthCheck'
 import Home from './Home'
 import Auth from './Auth'
 import Register from './Register'
+import Login from './Login'
 
 const MainLayout = () => {
   return (
@@ -21,6 +22,7 @@ const MainLayout = () => {
           <Route path='auth' element={<Auth/>}>
             {/* Nested routes for auth can be defined here */}
             <Route path='register' element={<Register/>}/>
+            <Route path='login' element={<Login/>}/>
           </Route>
 
       </Routes>
