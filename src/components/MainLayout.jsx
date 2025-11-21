@@ -6,6 +6,7 @@ import Home from './Home'
 import Auth from './Auth'
 import Register from './Register'
 import Login from './Login'
+import Error from './Error'
 
 const MainLayout = () => {
   return (
@@ -23,6 +24,7 @@ const MainLayout = () => {
             {/* Nested routes for auth can be defined here */}
             <Route path='register' element={<Register/>}/>
             <Route path='login' element={<Login/>}/>
+            <Route path='*' element={<Error/>}/>
           </Route>
 
       </Routes>
